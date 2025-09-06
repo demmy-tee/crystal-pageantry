@@ -13,7 +13,7 @@ export default function HomePage() {
       <div className="absolute inset-0 bg-black/70"></div>
 
       {/* Content */}
-      <div className="relative ">
+      <div className="relative">
         <h1 className="text-2xl sm:text-3xl font-bold text-center pt-4 mb-6">
           CRYSTAL PAGEANTRY
         </h1>

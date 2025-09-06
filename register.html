@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Playfair+Display:wght@400;700&amp;family=Inter:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --c-gold: #D4AF37;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+      }
+      .form-input {
+        background-color: #1a1a1a;
+        border: 1px solid #333;
+        color: #f0f3f5;
+      }
+      .form-input::placeholder {
+        color: #a0a0a0;
+      }
+      .form-input:focus {
+        border-color: var(--c-gold);
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.5);
+      }
+      .file-upload-label {
+        background-color: #1a1a1a;
+        border: 1px dashed #444;
+        color: #a0a0a0;
+        transition: all 0.2s ease-in-out;
+      }
+      .file-upload-label:hover {
+        background-color: #222;
+        border-color: var(--c-gold);
+        color: var(--c-gold);
+      }
+    </style>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-black text-white">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root">
+<main class="flex-grow">
+<header class="flex items-center p-4">
+<button class="text-[var(--c-gold)] size-12 shrink-0">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-xl font-bold text-center flex-1 text-white pr-12">Register</h1>
+</header>
+<div class="px-4 pb-8 pt-4 text-center">
+<h2 class="text-4xl font-bold text-[var(--c-gold)]">Mr &amp; Mrs KWASU</h2>
+<p class="text-lg text-zinc-300 mt-2">Beauty Pageant</p>
+<p class="text-zinc-400 text-sm mt-6 max-w-md mx-auto">
+            Join the prestigious Mr &amp; Mrs KWASU Beauty Pageant. Showcase your talent, grace, and charisma. Register now to embark on this unforgettable journey.
+          </p>
+</div>
+<form class="px-4 space-y-6">
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 border-none h-14 p-4 text-base font-normal" placeholder="Full Name" type="text"/>
+<input class="form-input flex w-full resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 border-none h-14 p-4 text-base font-normal" placeholder="Department" type="text"/>
+<textarea class="form-input flex w-full resize-none overflow-hidden rounded-lg focus:outline-0 focus:ring-0 border-none min-h-36 p-4 text-base font-normal" placeholder="Bio (Tell us about yourself)"></textarea>
+<div class="space-y-4">
+<label class="file-upload-label flex flex-col items-center justify-center w-full h-24 rounded-lg cursor-pointer" for="photo-upload">
+<div class="flex flex-col items-center justify-center pt-5 pb-6">
+<svg aria-hidden="true" class="w-8 h-8 mb-2 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"><path d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<p class="text-sm">Upload Photo</p>
+</div>
+<input class="hidden" id="photo-upload" type="file"/>
+</label>
+<label class="file-upload-label flex flex-col items-center justify-center w-full h-24 rounded-lg cursor-pointer" for="id-upload">
+<div class="flex flex-col items-center justify-center pt-5 pb-6">
+<svg aria-hidden="true" class="w-8 h-8 mb-2 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"><path d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<p class="text-sm">Upload ID</p>
+</div>
+<input class="hidden" id="id-upload" type="file"/>
+</label>
+<label class="file-upload-label flex flex-col items-center justify-center w-full h-24 rounded-lg cursor-pointer" for="docs-upload">
+<div class="flex flex-col items-center justify-center pt-5 pb-6">
+<svg aria-hidden="true" class="w-8 h-8 mb-2 text-gray-500 dark:text-gray-400" fill="none" viewBox="0 0 20 16" xmlns="http://www.w3.org/2000/svg"><path d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+<p class="text-sm">Upload Other Documents</p>
+</div>
+<input class="hidden" id="docs-upload" type="file"/>
+</label>
+</div>
+<div class="bg-[#1a1a1a] p-4 rounded-lg border border-[#333]">
+<h3 class="text-lg font-bold text-white mb-2">Eligibility Criteria</h3>
+<ul class="text-zinc-400 text-sm list-disc list-inside space-y-1">
+<li>Must be a registered student of KWASU.</li>
+<li>Must meet the height and age requirements.</li>
+<li>Must not have any prior criminal record.</li>
+<li>Must be available for all pageant activities.</li>
+</ul>
+</div>
+<div class="bg-[#1a1a1a] p-4 rounded-lg border border-[#333]">
+<h3 class="text-lg font-bold text-white mb-2">Registration Fee</h3>
+<p class="text-zinc-400 text-sm"> A non-refundable registration fee of <span class="font-bold text-[var(--c-gold)]">NGN 5,000</span> applies. Payment details will be provided upon submission of this form. </p>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center rounded-lg h-14 px-5 bg-[var(--c-gold)] text-black text-base font-bold tracking-wider uppercase hover:opacity-90 transition-opacity">
+<span>Submit Registration</span>
+</button>
+</form>
+<div class="h-24"></div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 bg-black border-t border-[#222]">
+<div class="flex justify-around items-center h-20 text-zinc-400">
+<a class="flex flex-col items-center justify-center gap-1" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path></svg>
+<p class="text-xs font-medium">Contestants</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-[var(--c-gold)]" href="#">
+<div class="bg-[var(--c-gold)] text-black rounded-full p-3 -mt-8 shadow-lg shadow-yellow-500/30">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path></svg>
+</div>
+<p class="text-xs font-medium mt-1">Register</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM224,48V208a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32H208A16,16,0,0,1,224,48ZM208,208V48H48V208H208Z"></path></svg>
+<p class="text-xs font-medium">Vote</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path></svg>
+<p class="text-xs font-medium">Contact</p>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>
