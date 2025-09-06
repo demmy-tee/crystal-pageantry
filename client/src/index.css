@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #121212;
+  --color-primary: #D4AF37;
+  --color-secondary: #B8860B;
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-background)] text-gray-400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+  }
+
+  /* a {
+    @apply text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition-colors;
+    text-decoration: none;
+  } */
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-[var(--color-gray-100)];
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+
+    /* button {
+      @apply bg-[var(--color-primary)] text-white font-bold py-2 px-4 rounded hover:bg-[var(--color-secondary)] transition-colors;
+      border: none;
+      cursor: pointer;
+    } */
+
+  input, textarea {
+    @apply bg-gray-800 text-white border border-gray-700 rounded py-2 px-4 focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)];
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
