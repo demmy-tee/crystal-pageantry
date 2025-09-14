@@ -19,7 +19,7 @@ export default function HomePage() {
         </h1>
         <div className="flex flex-col justify-center mt-20">
           <h3 className="text-4xl sm:text-5xl font-semibold text-center mb-4 text-gray-100">
-            Welcome to Mr And Miss KWASU Pageantry
+            Welcome to Mr And Miss Fresher Pageantry
           </h3>
           <p className="text-center text-lg mb-4 text-gray-100">
             Experience the magic of our crystal creations.

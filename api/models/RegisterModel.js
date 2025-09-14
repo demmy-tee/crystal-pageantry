@@ -5,6 +5,10 @@ const RegisterSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  bio: {
+    type: String,
+    required: true
+  },
   age: {
     type: Number,
     required: true
