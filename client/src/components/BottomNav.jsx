@@ -12,7 +12,7 @@ export default function bottomNav() {
 
   let active = "Home";
   if (location.pathname === "/") active = "Home";
-  else if (location.pathname === "/contestants") active = "Contestants";
+  else if (location.pathname === "/judges") active = "Contestants";
   else if (location.pathname === "/register") active = "Register";
   else if (location.pathname === "/vote") active = "Vote";
   else if (location.pathname === "/contact") active = "Contact";
@@ -31,9 +31,9 @@ export default function bottomNav() {
 
 
         <li>
-          <Link to="/contestants" className={`text-gray-400 hover:text-primary items-center  flex flex-col ${active === "Contestants" ? "text-primary" : ""}`}>
+          <Link to="/judges" className={`text-gray-400 hover:text-primary items-center  flex flex-col ${active === "Contestants" ? "text-primary" : ""}`}>
             <ContestantIcon className="w-6 h-6" />
-            Contestants
+            Judges
           </Link>
         </li>
 
@@ -45,7 +45,7 @@ export default function bottomNav() {
         </li>
 
         <li>
-          <Link to="/vote" className={`text-gray-400 hover:text-primary flex flex-col  items-center ${active === "Vote" ? "text-primary" : ""}`}>
+          <Link to="/voting" className={`text-gray-400 hover:text-primary flex flex-col  items-center ${active === "Vote" ? "text-primary" : ""}`}>
             <VoteIcon className="w-6 h-6" />
             Vote
           </Link>

@@ -7,9 +7,10 @@ import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT;
-app.use(express.json());
+app.use(express.json({extended:true, limit:'50mb'}));
 app.use(cors());
 app.use('/api', router);
+
 
 mongoose.connect(process.env.MONGO_URI)
 .then(() => {
@@ -22,4 +23,3 @@ mongoose.connect(process.env.MONGO_URI)
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-

@@ -27,7 +27,7 @@ const  Register = () => {
     try {
       const response = await api.post("/register", data);
       console.log("Registration successful:", response.data);
-      alert("Registration successful!");
+      alert("Registration successful! you will receive a confirmation email shortly.");
       setLoading(false);
     } catch (error) {
       console.error("Error during registration:", error);
@@ -55,8 +55,8 @@ const  Register = () => {
     flex-col
     justify-between bg-black text-white">
       {/* Header */}
-      <header className="flex items-center p-4">
-        <h1 className="text-xl font-bold text-center flex-1 text-white pr-12">
+      <header className="flex items-center  p-4">
+        <h1 className="text-xl font-bold text-center flex-1 text-gray-300 pr-12">
           Register
         </h1>
       </header>
@@ -160,7 +160,7 @@ const  Register = () => {
                   strokeWidth="2"
                 />
               </svg>
-               <p className="text-sm">{photoFile ? photoFile.name : "Upload Photo"}</p>
+               <p className="text-sm">{photoFile ? photoFile.name : "Upload a professionally taken Photo"}</p>
             </div>
             <input className="hidden" id="photo-upload" type="file" onChange={(e) => handleFileChange(e, setPhotoFile)} />
           </label>
@@ -257,7 +257,7 @@ const  Register = () => {
         <div className="flex justify-center items-center p-4">
              {/* Submit Button */}
        <button  className='bg-primary text-background rounded-lg p-2 text-center hover:bg-background hover:text-gray-300 transition-colors hover:border-2 hover:border-primary'>
-              {loading ? <span>Loading...</span> : <span>Submit Form</span>}
+              {loading ? <span>Loading...</span> : <span>Register</span>}
             </button>
      </div>
       </form>
